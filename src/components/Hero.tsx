@@ -24,12 +24,25 @@ export default function Hero() {
 
       <div className="relative z-10 flex h-full flex-col justify-center items-center px-16 pb-20 pointer-events-none">
         <BlurText
+          text="Hi there!"
+          delay={100}
+          animateBy="words"
+          direction="top"
+          className="text-xl mb-4 text-white"
+        />
+        <BlurText
           text="Discover the world of quantum with us."
           delay={200}
           animateBy="words"
           direction="top"
           className="text-4xl mb-8 text-white"
         />
+        <div className="mt-10 pointer-events-auto">
+          <Button 
+            variant="outline"
+            size="lg"
+            className="rounded-full">Join our group!</Button>
+        </div>
       </div>
 
     </section>
