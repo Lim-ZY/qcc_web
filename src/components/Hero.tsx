@@ -2,6 +2,7 @@
 
 import Particles from "@/components/Particles";
 import BlurText from "./BlurText";
+import { Button } from "./ui/button";
 
 export default function Hero() {
   return (
@@ -23,7 +24,7 @@ export default function Hero() {
 
       <div className="relative z-10 flex h-full flex-col justify-center items-center px-16 pb-20 pointer-events-none">
         <BlurText
-          text="Get ready to be amazed"
+          text="Discover the world of quantum with us."
           delay={200}
           animateBy="words"
           direction="top"
