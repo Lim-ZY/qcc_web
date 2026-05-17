@@ -47,16 +47,6 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-@layer components {
-  .navbarElement {
-    @apply text-sm text-white/50 hover:text-white transition-colors;
-  }
-
-  .buttonOutline {
-    @apply text-sm px-4 py-2 border border-[#64ffda] text-[#64ffda] rounded-lg hover:bg-[#64ffda]/10 transition-colors;
-  }
-}
-
 :root {
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
