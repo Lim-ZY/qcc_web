@@ -1,9 +1,12 @@
+import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 export interface PersonCardProps {
   name: string;
   role: string;
-  email: string;
+  email?: string;
+  desc?: string[];
   imageUrl?: string; // Optional image
   className?: string;
 }
@@ -12,6 +15,7 @@ export default function PersonCard({
   name,
   role,
   email,
+  desc,
   imageUrl,
   className,
 }: PersonCardProps) {
@@ -30,14 +34,27 @@ export default function PersonCard({
         )}
       </div>
 
-      <h4 className="text-lg font-semibold text-white">{name}</h4>
-      <p className="text-sm text-cyan-400 mb-3">{role}</p>
-      <a
-        href={`mailto:${email}`}
-        className="text-xs text-gray-500 hover:text-white transition-colors"
-      >
-        {email}
-      </a>
+      <h4 className="text-xl font-bold text-white">{name}</h4>
+      <p className="text-xl font-semibold text-cyan-400 mb-2">{role}</p>
+      {email && (
+        <Button
+          variant="link"
+          className="text-md text-white/90 hover:text-white transition-colors tracking-tight pointer-events-auto"
+          asChild
+        >
+          <a href={`mailto:${email}`}>{email}</a>
+        </Button>
+      )}
+      {desc && (
+        <>
+          <Separator />
+          <ul className="text-left text-md max-w-3xl text-white mt-6">
+            {desc.map((item, i) => (
+              <li key={i}>&bull; {item}</li>
+            ))}
+          </ul>
+        </>
+      )}
     </div>
   );
 }

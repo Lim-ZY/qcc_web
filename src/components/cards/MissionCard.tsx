@@ -18,8 +18,8 @@ export default function MissionCard({
         className
       )}
     >
-      <h3 className="text-xl font-semibold text-white mb-3">{title}</h3>
-      <p className="text-gray-400 leading-relaxed">{description}</p>
+      <h3 className="text-2xl font-semibold text-white mb-3">{title}</h3>
+      <p className="text-xl text-white/90 max-w-xl">{description}</p>
     </div>
   );
 }

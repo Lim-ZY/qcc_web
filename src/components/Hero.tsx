@@ -22,7 +22,7 @@ export default function Hero() {
       />
       <div className="flex gap-4 mt-10">
         <Button variant="link" className="p-6 gap-2 bg-white text-black text-xl hover:bg-gray-200 rounded-full tracking-tight pointer-events-auto" size="lg">
-          <Link href="#">Join our group!</Link>
+          <Link href={`https://t.me/+rZapiaInhiYzZmI1`}>Join our community!</Link>
         </Button>
         <Button variant="link" className="p-6 gap-2 border-white/20 text-white text-xl bg-transparent hover:bg-white/10 rounded-full tracking-tight pointer-events-auto" size="lg">
           <ArrowUpRightIcon />

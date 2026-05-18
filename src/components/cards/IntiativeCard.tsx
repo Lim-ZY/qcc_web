@@ -45,7 +45,7 @@ export default function InitiativeCard({
       {/* Text Content */}
       <div className={cn("flex flex-col justify-center", orientation === "vertical" ? "w-full mt-2" : "md:w-2/3")}>
         <h3 className="text-2xl font-semibold text-white mb-3">{title}</h3>
-        <p className="text-gray-400 mb-6 leading-relaxed">{description}</p>
+        <p className="text-xl text-white/90 text-justify mb-6">{description}</p>
 
         {/* Tags mapping */}
         <div className="flex flex-wrap gap-2 text-xs font-mono">

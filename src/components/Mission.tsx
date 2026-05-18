@@ -1,29 +1,29 @@
+import SectionHeader from "@/components/cards/SectionHeader";
 import MissionCard from "@/components/cards/MissionCard";
 
 export default function Mission() {
   const Missions = [
     {
-      title: "Learn",
-      description: "Build strong fundamentals through structured workshops and curated learning resources designed for students by students.",
-    },
-    {
-      title: "Build",
-      description: "Practice with real tools and practical exercises—quantum circuits, algorithms, and NISQ-era workflows—without assuming prior exposure.",
+      title: "Bond",
+      description: "Cultivate an inclusive and vibrant community of like-minded individuals, through mentorship, education, and collaboration.",
     },
     {
       title: "Research",
-      description: "Join mentored projects that train students to execute research-grade work and communicate results with professional standards.",
+      description: "Explore the latest developments in quantum computing, and communicate results to the world.",
+    },
+    {
+      title: "Share",
+      description: "Accelerate the collective understanding of quantum computing, through community engagement and a living open-source knowledge base.",
     },
   ];
 
   return (
     <section id="mission" className="flex min-h-screen w-full flex-col justify-center items-center py-24 px-6 max-w-6xl mx-auto scroll-mt-10">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Our Mission</h2>
-        <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-          Democratizing and demystifying quantum computing. We exist to lower the barrier to entry and create a credible pathway from curiosity to capability.
-        </p>
-      </div>
+      <SectionHeader
+        title="Our Mission"
+        description="NUS QCC exists to democratize and demystify quantum computing. We exist to connect like-minded individuals, and to accelerate the collective understanding of quantum computing."
+      />
+
       <div className="grid md:grid-cols-3 gap-8">
         {Missions.map((mission, i) => (
           <MissionCard
