@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
   return (
@@ -10,12 +11,12 @@ export default function Navbar() {
           NUS QCC
         </Link>
       </div>
-      <nav className="hidden md:flex items-center gap-x-10 text-xl font-bold text-white">
-        <Link href="#mission" className="">Mission</Link>
-        <Link href="#initiatives" className="">Initiatives</Link>
-        <Link href="#people" className="">People</Link>
-        <Link href="#contact" className="">Contact</Link>
-        <Link href="/notes" className="">Notes Database</Link>
+      <nav className="hidden md:flex items-center gap-x-4 text-xl font-bold text-white">
+        <Button variant="link" className="p-2 text-white text-xl"><Link href="#mission" className="">Mission</Link></Button>
+        <Button variant="link" className="p-2 text-white text-xl"><Link href="#initiatives" className="">Initiatives</Link></Button>
+        <Button variant="link" className="p-2 text-white text-xl"><Link href="#people" className="">People</Link></Button>
+        <Button variant="link" className="p-2 text-white text-xl"><Link href="#contact" className="">Contact</Link></Button>
+        <Button variant="link" className="p-2 text-white text-xl"><Link href="/notes" className="">Notes Database</Link></Button>
       </nav>
     </header>
   );
