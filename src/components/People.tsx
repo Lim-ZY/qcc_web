@@ -1,3 +1,5 @@
+import PersonCard from "@/components/cards/PersonCard";
+
 export default function People() {
   const people = [
     { role: "President", name: "Student Name", email: "email@university.edu" },
@@ -13,16 +15,11 @@ export default function People() {
         <p className="text-gray-400 max-w-2xl mx-auto text-lg">Meet the leadership team organizing the events, maintaining the knowledge base, and driving the quantum community forward.</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 pointer-events-auto">
         {people.map((person, i) => (
-          <div key={i} className="p-6 rounded-2xl bg-white/[0.02] border border-white/5 text-center backdrop-blur-sm pointer-events-auto">
-            <div className="w-24 h-24 rounded-full bg-white/10 mx-auto mb-4 overflow-hidden"></div>
-            <h4 className="text-lg font-semibold text-white">{person.name}</h4>
-            <p className="text-sm text-cyan-400 mb-3">{person.role}</p>
-            <a href={`mailto:${person.email}`} className="text-xs text-gray-500 hover:text-white transition-colors">
-              {person.email}
-            </a>
-          </div>
+          <PersonCard
+            key={i} {...person}
+          />
         ))}
       </div>
     </section>

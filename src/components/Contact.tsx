@@ -8,10 +8,10 @@ export default function Contact() {
         Interested in collaborating, attending a session, or just want to chat about the future of quantum? We would love to hear from you.
       </p>
       <div className="flex flex-col sm:flex-row justify-center gap-4 ">
-        <Button variant="link" className="p-4 gap-2 bg-white text-black text-xl hover:bg-gray-200 rounded-full tracking-tight pointer-events-auto" size="lg">
+        <Button variant="link" className="p-6 gap-2 bg-white text-black text-xl hover:bg-gray-200 rounded-full tracking-tight pointer-events-auto" size="lg">
           Email the Club
         </Button>
-        <Button variant="link" className="p-4 gap-2 border-white/20 text-white text-xl bg-transparent hover:bg-white/10 rounded-full tracking-tight pointer-events-auto" size="lg">
+        <Button variant="link" className="p-6 gap-2 border-white/20 text-white text-xl bg-transparent hover:bg-white/10 rounded-full tracking-tight pointer-events-auto" size="lg">
           Join Members Channel
         </Button>
       </div>
