@@ -10,14 +10,14 @@ export default function Hero() {
         delay={100}
         animateBy="words"
         direction="top"
-        className="text-4xl mb-4 text-white"
+        className="text-5xl mb-4 text-white"
       />
       <BlurText
         text="Discover the world of quantum with us."
         delay={300}
         animateBy="words"
         direction="top"
-        className="text-4xl mb-8 text-white"
+        className="text-5xl mb-8 text-white text-center"
       />
       <div className="flex gap-4 mt-10 pointer-events-auto">
         <Button className="gap-2 bg-white text-black hover:bg-gray-200 rounded-full" size="lg">
