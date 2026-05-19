@@ -17,7 +17,12 @@ export default function Navbar() {
         <Button variant="link" className="p-2 text-white text-xl"><Link href="#initiatives" className="">Initiatives</Link></Button>
         <Button variant="link" className="p-2 text-white text-xl"><Link href="#people" className="">People</Link></Button>
         <Button variant="link" className="p-2 text-white text-xl"><Link href="#contact" className="">Contact</Link></Button>
-        <Button variant="link" className="p-2 text-white text-xl"><Link href="/notes" className="">Notes Database</Link><ArrowUpRightIcon /></Button>
+        <Button variant="link" className="p-2 text-white text-xl" asChild>
+          <Link href="/notes" className="">
+            Notes Database
+            <ArrowUpRightIcon className="h-4 w-4" />
+          </Link>
+        </Button>
       </nav>
     </header>
   );
