@@ -15,6 +15,12 @@ export default function Initiatives() {
       imageLabel: "PROJECT_IMG",
       tags: ["Theoretical", "Interactive"],
     },
+    {
+      title: "Quantum Notes Repository",
+      description: "A collaborative resource for sharing and learning about quantum computing.",
+      imageLabel: "PROJECT_IMG",
+      link: "/notes",
+    },
   ];
 
   return (
