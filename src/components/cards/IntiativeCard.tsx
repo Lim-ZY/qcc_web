@@ -70,7 +70,7 @@ export default function InitiativeCard({
             <Button
               variant="ghost"
               size="lg"
-              className="px-3 py-1.5 gap-2 rounded-full bg-white/[0.03] backdrop-blur-md border border-white/[0.08] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-lg text-orange-500/90 font-bold hover:text-orange-500 hover:bg-white/[0.08] hover:border-white/[0.15] transition-all duration-300 pointer-events-auto"
+              className="p-6 gap-2 rounded-full bg-white/[0.03] backdrop-blur-md border border-white/[0.08] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-lg text-orange-500/90 font-bold hover:text-orange-500 hover:bg-white/[0.08] hover:border-white/[0.15] transition-all duration-300 pointer-events-auto"
               asChild
             >
               <Link href={link}>
