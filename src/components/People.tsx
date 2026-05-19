@@ -1,13 +1,14 @@
 import SectionHeader from "@/components/cards/SectionHeader";
 import PersonCard from "@/components/cards/PersonCard";
-import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 
 export default function People() {
   const people = [
-    { role: "President", name: "Anthony Liu", email: "e1484135@u.nus.edu" },
-    { role: "Vice President", name: "Sai Sudarshan Srikanth", email: "e1538932@u.nus.edu" },
-    { role: "General Secretary", name: "Yang Xinjian", email: "e1710532@u.nus.edu" },
-    { role: "Head of Operations", name: "Lim Zi Yang", email: "lim_zy@u.nus.edu", linkedin: "ziyanglim" },
+    { role: "President", name: "Anthony Liu", email: "e1484135@u.nus.edu", imagePath: "/images/people/Anthony.png" },
+    { role: "Vice President", name: "Sai Sudarshan Srikanth", email: "e1538932@u.nus.edu", imagePath: "/images/people/Sai.png" },
+    { role: "Treasurer", name: "Leina Tan", email: "leinat0102@gmail.com", imagePath: "/images/people/Leina.png" },
+    { role: "General Secretary", name: "Yang Xinjian", email: "xinjian.yang@u.nus.edu", imagePath: "/images/people/XinJian.png" },
+    { role: "Head of Operations", name: "Lim Zi Yang", email: "lim_zy@u.nus.edu", linkedin: "ziyanglim", imagePath: "/images/people/ZiYang.png" },
   ];
 
   const advisor_desc = [
@@ -23,21 +24,29 @@ export default function People() {
         description="Meet the leadership team organizing the events, maintaining the knowledge base, and driving the quantum community forward."
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/5 text-center backdrop-blur-sm transition-all">
-        <div className="md:col-span-1 md:row-span-2 flex">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/5 text-center backdrop-blur-sm transition-all">
+        <div className="md:col-span-1 md:row-span-3">
           <PersonCard
             role="Club Advisor"
             name="Prof. Alexander Ling Euk Jin"
             desc={advisor_desc}
+            imagePath="/images/people/alexander-ling.webp"
             className="mr-6"
           />
         </div>
 
-        {people.map((person, i) => (
-          <PersonCard
-            key={i} {...person}
-          />
-        ))}
+        <Separator
+          orientation="vertical"
+          className="hidden md:block h-full bg-white/10 min-h-[200px]"
+        />
+
+        <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
+          {people.map((person, i) => (
+            <PersonCard
+              key={i} {...person}
+            />
+          ))}
+        </div>
       </div>
 
       <div className="flex flex-col items-center justify-center mt-4">

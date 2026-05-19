@@ -6,19 +6,17 @@ export default function Initiatives() {
     {
       title: "Quantum Coffee Chat Series",
       description: "A series of informal conversations with experts in the field of quantum computing - designed to inspire and educate the community.",
-      imageLabel: "WORKSHOP_IMG",
+      imagePath: "/images/initiatives/QuantumCoffeeChatSeries.jpg",
       tags: ["Building Community", "Building Connections"],
     },
     {
       title: "Foundational Learning Series",
       description: "A rolling series discussing foundational concepts in quantum — designed to demystify core ideas in quantum, engage the community, and help beginners take their first steps.",
-      imageLabel: "PROJECT_IMG",
       tags: ["Theoretical", "Interactive"],
     },
     {
       title: "Quantum Notes Repository",
       description: "A collaborative resource for sharing and learning about quantum computing.",
-      imageLabel: "PROJECT_IMG",
       link: "/notes",
     },
   ];
@@ -40,7 +38,6 @@ export default function Initiatives() {
         <InitiativeCard
           title="Upcoming: Quantum Fall Fest 2026"
           description="A flagship cross-campus programme."
-          imageLabel="HACKATHON_IMG"
           tags={["Event"]}
           orientation="vertical" // Changes structural layout
           className="md:w-1/2 mx-auto border-rose-500/30" // Overrides width and border color

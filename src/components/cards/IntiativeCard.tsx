@@ -2,11 +2,12 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRightIcon } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export interface InitiativeCardProps {
   title: string;
   description: string;
-  imageLabel: string;
+  imagePath?: string;
   tags?: string[];
   link?: string;
   className?: string;
@@ -16,7 +17,7 @@ export interface InitiativeCardProps {
 export default function InitiativeCard({
   title,
   description,
-  imageLabel,
+  imagePath,
   tags,
   link,
   className,
@@ -41,9 +42,18 @@ export default function InitiativeCard({
             orientation === "vertical" ? "h-64" : "h-48"
           )}
         >
-          <span className="text-gray-600 font-mono text-sm tracking-widest">
-            [{imageLabel}]
-          </span>
+          {imagePath ? (
+            <Image
+              src={imagePath}
+              alt={title}
+              fill
+              sizes="(max-width: 768px) 100vw, 96px"
+              className="object-cover" />
+          ) : (
+            <span className="text-gray-600 font-mono text-sm tracking-widest">
+              [Coming Soon]
+            </span>
+          )}
         </div>
       </div>
 

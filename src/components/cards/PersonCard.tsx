@@ -1,6 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export interface PersonCardProps {
   name: string;
@@ -8,7 +9,7 @@ export interface PersonCardProps {
   email?: string;
   linkedin?: string;
   desc?: string[];
-  imageUrl?: string; // Optional image
+  imagePath?: string;
   className?: string;
 }
 
@@ -18,7 +19,7 @@ export default function PersonCard({
   email,
   linkedin,
   desc,
-  imageUrl,
+  imagePath,
   className,
 }: PersonCardProps) {
   return (
@@ -28,9 +29,14 @@ export default function PersonCard({
         className
       )}
     >
-      <div className="w-24 h-24 mx-auto mb-4 overflow-hidden rounded-full bg-[#0a0c14] border border-white/10 flex items-center justify-center">
-        {imageUrl ? (
-          <img src={imageUrl} alt={name} className="w-full h-full object-cover" />
+      <div className="w-24 h-24 mx-auto mb-4 overflow-hidden rounded-full bg-[#0a0c14] border border-white/10 flex items-center justify-center relative">
+        {imagePath ? (
+          <Image
+            src={imagePath}
+            alt={name}
+            fill
+            sizes="(max-width: 768px) 100vw, 96px"
+            className="object-cover" />
         ) : (
           <span className="text-gray-600 font-mono text-xs">IMG</span>
         )}
