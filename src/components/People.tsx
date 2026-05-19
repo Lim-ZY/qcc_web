@@ -7,7 +7,7 @@ export default function People() {
     { role: "President", name: "Anthony Liu", email: "e1484135@u.nus.edu" },
     { role: "Vice President", name: "Sai Sudarshan Srikanth", email: "e1538932@u.nus.edu" },
     { role: "General Secretary", name: "Yang Xinjian", email: "e1710532@u.nus.edu" },
-    { role: "Head of Operations", name: "Lim Zi Yang", email: "lim_zy@u.nus.edu" },
+    { role: "Head of Operations", name: "Lim Zi Yang", email: "lim_zy@u.nus.edu", linkedin: "ziyanglim" },
   ];
 
   const advisor_desc = [

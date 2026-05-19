@@ -21,7 +21,7 @@ export default function Mission() {
     <section id="mission" className="flex min-h-screen w-full flex-col justify-center items-center py-24 px-6 max-w-6xl mx-auto scroll-mt-10">
       <SectionHeader
         title="Our Mission"
-        description="NUS QCC exists to democratize and demystify quantum computing. We exist to connect like-minded individuals, and to accelerate the collective understanding of quantum computing."
+        description="NUS QCC exists to demystify quantum computing, to connect like-minded individuals, and to accelerate the collective understanding of quantum computing."
       />
 
       <div className="grid md:grid-cols-3 gap-8">

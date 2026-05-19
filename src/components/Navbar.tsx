@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ArrowUpRightIcon } from "lucide-react";
 
 export default function Navbar() {
   return (
@@ -16,7 +17,7 @@ export default function Navbar() {
         <Button variant="link" className="p-2 text-white text-xl"><Link href="#initiatives" className="">Initiatives</Link></Button>
         <Button variant="link" className="p-2 text-white text-xl"><Link href="#people" className="">People</Link></Button>
         <Button variant="link" className="p-2 text-white text-xl"><Link href="#contact" className="">Contact</Link></Button>
-        <Button variant="link" className="p-2 text-white text-xl"><Link href="/notes" className="">Notes Database</Link></Button>
+        <Button variant="link" className="p-2 text-white text-xl"><Link href="/notes" className="">Notes Database</Link><ArrowUpRightIcon /></Button>
       </nav>
     </header>
   );

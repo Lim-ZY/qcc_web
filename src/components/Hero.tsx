@@ -5,7 +5,7 @@ import { ArrowUpRightIcon } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="flex min-h-screen w-full flex-col justify-center items-center max-w-5xl mx-auto">
+    <section id="home" className="flex min-h-screen w-full flex-col justify-center items-center max-w-5xl mx-auto">
       <BlurText
         text="Hi there!"
         delay={100}
@@ -20,9 +20,17 @@ export default function Hero() {
         direction="top"
         className="text-5xl mb-8 text-white text-center"
       />
-      <div className="flex gap-4 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 w-full max-w-md">
         <Button variant="link" className="p-6 gap-2 bg-white text-black text-xl hover:bg-gray-200 rounded-full tracking-tight pointer-events-auto" size="lg">
-          <Link href={`https://t.me/+rZapiaInhiYzZmI1`}>Join our community!</Link>
+          <ArrowUpRightIcon />
+          <a
+            href={`https://t.me/+rZapiaInhiYzZmI1`}
+            target="_blank"
+            referrerPolicy="no-referrer"
+            rel="noopener noreferrer"
+          >
+            Join our community!
+          </a>
         </Button>
         <Button variant="link" className="p-6 gap-2 border-white/20 text-white text-xl bg-transparent hover:bg-white/10 rounded-full tracking-tight pointer-events-auto" size="lg">
           <ArrowUpRightIcon />
