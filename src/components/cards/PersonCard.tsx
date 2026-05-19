@@ -24,7 +24,7 @@ export default function PersonCard({
   return (
     <div
       className={cn(
-        "p-6 rounded-2xl bg-white/[0.02] border border-white/5 text-center backdrop-blur-sm transition-all hover:bg-white/[0.04]",
+        "p-6 rounded-2xl bg-white/[0.02] border border-white/5 text-center backdrop-blur-sm transition-all",
         className
       )}
     >
@@ -37,18 +37,30 @@ export default function PersonCard({
       </div>
 
       <h4 className="text-xl font-bold text-white">{name}</h4>
-      <p className="text-xl font-semibold text-cyan-400 mb-2">{role}</p>
+      <p className="text-xl font-semibold text-blue-500 mb-2">{role}</p>
       <Separator className="mb-2" />
+
+      {desc && (
+        <>
+          <ul className="text-left text-lg max-w-3xl text-white">
+            {desc.map((item, i) => (
+              <li key={i}>&bull; {item}</li>
+            ))}
+          </ul>
+        </>
+      )}
 
       <div className="flex flex-col sm:flex-row justify-center items-center gap-2 mt-2 px-4 w-full">
         {email && (
-          <Button variant="link" className="p-4 gap-2 flex-1 border-white/20 text-white text-xl bg-transparent hover:bg-white/10 rounded-full tracking-tight pointer-events-auto" size="lg">
-            <a href={`mailto:${email}`}>Email</a>
+          <Button variant="link" className="px-3 py-1.5 rounded-full gap-2 flex-1 bg-blur-md border border-white/[0.1] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] hover:bg-white/[0.12] hover:border-white/[0.20] transition-all duration-300 tracking-tight pointer-events-auto text-lg text-bold text-white" size="lg" asChild>
+            <a href={`mailto:${email}`}>
+              Email
+            </a>
           </Button>
         )}
 
         {linkedin && (
-          <Button variant="link" className="p-4 gap-2 flex-1 border-white/20 text-white text-xl bg-transparent hover:bg-white/10 rounded-full tracking-tight pointer-events-auto" size="lg">
+          <Button variant="link" className="px-3 py-1.5 rounded-full gap-2 flex-1 bg-blur-md border border-white/[0.1] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] hover:bg-white/[0.12] hover:border-white/[0.20] transition-all duration-300 tracking-tight pointer-events-auto text-lg text-bold text-white" size="lg" asChild>
             <a
               href={`https://www.linkedin.com/in/${linkedin}`}
               target="_blank"
@@ -60,16 +72,6 @@ export default function PersonCard({
           </Button>
         )}
       </div>
-
-      {desc && (
-        <>
-          <ul className="text-left text-md max-w-3xl text-white">
-            {desc.map((item, i) => (
-              <li key={i}>&bull; {item}</li>
-            ))}
-          </ul>
-        </>
-      )}
     </div>
   );
 }

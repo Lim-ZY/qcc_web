@@ -7,19 +7,13 @@ export default function Initiatives() {
       title: "Quantum Coffee Chat Series",
       description: "A series of informal conversations with experts in the field of quantum computing - designed to inspire and educate the community.",
       imageLabel: "WORKSHOP_IMG",
-      tags: [
-        { label: "Building Community", colorClass: "bg-cyan-400/10 text-cyan-400 border-cyan-400/20" },
-        { label: "Building Connections", colorClass: "bg-blue-400/10 text-blue-400 border-blue-400/20" },
-      ],
+      tags: ["Building Community", "Building Connections"],
     },
     {
       title: "Foundational Learning Series",
       description: "A rolling series discussing foundational concepts in quantum — designed to demystify core ideas in quantum, engage the community, and help beginners take their first steps.",
       imageLabel: "PROJECT_IMG",
-      tags: [
-        { label: "Theoretical", colorClass: "bg-indigo-400/10 text-indigo-400 border-indigo-400/20" },
-        { label: "Interactive", colorClass: "bg-purple-400/10 text-purple-400 border-purple-400/20" },
-      ],
+      tags: ["Theoretical", "Interactive"],
     },
   ];
 
@@ -41,7 +35,7 @@ export default function Initiatives() {
           title="Upcoming: Quantum Fall Fest 2026"
           description="A flagship cross-campus programme."
           imageLabel="HACKATHON_IMG"
-          tags={[{ label: "Event", colorClass: "bg-rose-400/10 text-rose-400 border-rose-400/20" }]}
+          tags={["Event"]}
           orientation="vertical" // Changes structural layout
           className="md:w-1/2 mx-auto border-rose-500/30" // Overrides width and border color
         />

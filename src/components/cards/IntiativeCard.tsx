@@ -4,7 +4,7 @@ export interface InitiativeCardProps {
   title: string;
   description: string;
   imageLabel: string;
-  tags: { label: string; colorClass: string }[];
+  tags: string[];
   className?: string;
   orientation?: "horizontal" | "vertical";
 }
@@ -48,13 +48,13 @@ export default function InitiativeCard({
         <p className="text-xl text-white/90 text-justify mb-6">{description}</p>
 
         {/* Tags mapping */}
-        <div className="flex flex-wrap gap-2 text-xs font-mono">
+        <div className="flex flex-wrap gap-2 text-lg font-mono">
           {tags.map((tag, i) => (
             <span
               key={i}
-              className={cn("px-3 py-1.5 rounded-full border", tag.colorClass)}
+              className="px-3 py-1.5 rounded-full bg-white/[0.03] bg-blur-md border border-white/[0.08] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-blue-500 text-bold hover:bg-white/[0.08] hover:border-white/[0.15] transition-all duration-300"
             >
-              {tag.label}
+              {tag}
             </span>
           ))}
         </div>
