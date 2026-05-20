@@ -22,6 +22,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "NUS QCC",
   description: "Where superposition meets complementarity",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({

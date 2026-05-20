@@ -7,12 +7,12 @@ export default function Initiatives() {
       title: "Quantum Coffee Chat Series",
       description: "A series of informal conversations with experts in the field of quantum computing - designed to inspire and educate the community.",
       imagePath: "/images/initiatives/QuantumCoffeeChatSeries.jpg",
-      tags: ["Building Community", "Building Connections"],
+      tags: ["Series"],
     },
     {
       title: "Foundational Learning Series",
       description: "A rolling series discussing foundational concepts in quantum — designed to demystify core ideas in quantum, engage the community, and help beginners take their first steps.",
-      tags: ["Theoretical", "Interactive"],
+      tags: ["Series"],
     },
     {
       title: "Quantum Notes Repository",

@@ -1,13 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRightIcon } from "lucide-react";
 
 export default function Navbar() {
   return (
     <header className="fixed top-0 z-50 inset-x-0 flex items-center justify-between backdrop-blur-md w-full px-6 py-4 pointer-events-auto border-b border-white/10">
-      <div className="flex items-center">
+      <div className="flex items-center gap-4">
+        <Image src="/icon.png" alt="NUS QCC Logo" width={100} height={100} />
         <Link href="/" className="text-xl font-bold text-white">
           NUS QCC
         </Link>
