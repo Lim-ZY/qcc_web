@@ -24,14 +24,13 @@ export default function People() {
         description="Meet the leadership team organizing the events, maintaining the knowledge base, and driving the quantum community forward."
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/5 text-center backdrop-blur-sm transition-all">
-        <div className="md:col-span-1 md:row-span-3">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 p-4 rounded-2xl bg-white/[0.02] border border-white/5 text-center backdrop-blur-sm transition-all">
+        <div className="md:col-span-1">
           <PersonCard
             role="Club Advisor"
             name="Prof. Alexander Ling Euk Jin"
             desc={advisor_desc}
             imagePath="/images/people/alexander-ling.webp"
-            className="mr-6"
           />
         </div>
 
