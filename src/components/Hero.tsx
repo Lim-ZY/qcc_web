@@ -20,8 +20,8 @@ export default function Hero() {
         direction="top"
         className="text-3xl md:text-5xl mb-8 text-white text-center"
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 w-full max-w-md">
-        <Button variant="link" className="p-6 gap-2 bg-white text-black text-md md:text-xl hover:bg-gray-200 rounded-full tracking-tight pointer-events-auto" size="lg" asChild>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 w-1/2 md:w-full max-w-md">
+        <Button variant="link" className="p-4 md:p-6 gap-2 bg-white text-black text-md md:text-xl hover:bg-gray-200 rounded-full tracking-tight pointer-events-auto" size="lg" asChild>
           <a
             href={`https://t.me/+rZapiaInhiYzZmI1`}
             target="_blank"
@@ -32,7 +32,7 @@ export default function Hero() {
             Join our community!
           </a>
         </Button>
-        <Button variant="link" className="p-6 gap-2 border-white/20 text-white text-md md:text-xl bg-transparent hover:bg-white/10 rounded-full tracking-tight pointer-events-auto" size="lg" asChild>
+        <Button variant="link" className="p-4 md:p-6 gap-2 border-white/20 text-white text-md md:text-xl bg-transparent hover:bg-white/10 rounded-full tracking-tight pointer-events-auto" size="lg" asChild>
           <Link href="/notes" target="_blank">
             <ArrowUpRightIcon className="h-4 w-4" />
             Explore Notes
