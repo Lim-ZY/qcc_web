@@ -39,7 +39,7 @@ export default function People() {
           className="hidden md:block h-full bg-white/10 min-h-[200px]"
         />
 
-        <div className="grid grid-cols-2 sm:grid-cols-1 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {people.map((person, i) => (
             <PersonCard
               key={i} {...person}
