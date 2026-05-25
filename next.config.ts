@@ -7,12 +7,12 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
-        source: '/notes',
-        destination: `${process.env.QUARTZ_URL}/`,
+        source: "/notes",
+        destination: `https://nusqcc-quartz.vercel.app/`,
       },
       {
-        source: '/notes/:path*',
-        destination: `${process.env.QUARTZ_URL}/:path*`
+        source: "/notes/:path*",
+        destination: `https://nusqcc-quartz.vercel.app/:path*`,
       },
     ];
   },
