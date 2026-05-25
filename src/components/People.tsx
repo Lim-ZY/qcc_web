@@ -49,7 +49,7 @@ export default function People() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center mt-4">
+      <div className="flex flex-col items-center justify-center mt-2">
         <p className="text-center text-lg text-white mt-6">
           For general enquiries, please contact us using the club email in the Contact section.
         </p>

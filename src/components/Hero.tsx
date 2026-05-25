@@ -33,7 +33,7 @@ export default function Hero() {
           </a>
         </Button>
         <Button variant="link" className="p-6 gap-2 border-white/20 text-white text-xl bg-transparent hover:bg-white/10 rounded-full tracking-tight pointer-events-auto" size="lg" asChild>
-          <Link href="/notes">
+          <Link href="/notes" target="_blank">
             <ArrowUpRightIcon className="h-4 w-4" />
             Explore Notes
           </Link>

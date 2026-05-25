@@ -42,7 +42,9 @@ export default function PersonCard({
         )}
       </div>
 
-      <h4 className="text-xl font-bold text-white">{name}</h4>
+      <div className="w-full overflow-x-auto custom-scrollbar pointer-events-auto">
+        <h4 className="text-xl font-bold text-white w-max mx-auto whitespace-nowrap">{name}</h4>
+      </div>
       <p className="text-xl font-semibold text-blue-500 mb-2">{role}</p>
       <Separator className="mb-2" />
 
