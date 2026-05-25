@@ -45,7 +45,9 @@ export default function PersonCard({
       <div className="w-full overflow-x-auto custom-scrollbar pointer-events-auto">
         <h4 className="text-xl font-bold text-white w-max mx-auto whitespace-nowrap">{name}</h4>
       </div>
-      <p className="text-xl font-semibold text-blue-500 mb-2">{role}</p>
+      <div className="w-full overflow-x-auto custom-scrollbar pointer-events-auto">
+        <p className="text-xl font-semibold text-blue-500 w-max mb-2 mx-auto whitespace-nowrap">{role}</p>
+      </div>
       <Separator className="mb-2" />
 
       {desc && (
