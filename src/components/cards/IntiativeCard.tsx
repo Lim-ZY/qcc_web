@@ -59,11 +59,11 @@ export default function InitiativeCard({
 
       {/* Text Content */}
       <div className={cn("flex flex-col justify-center", orientation === "vertical" ? "w-full mt-2" : "md:w-2/3")}>
-        <h3 className="text-2xl font-semibold text-white mb-3">{title}</h3>
-        <p className="text-xl text-white/90 text-justify mb-6">{description}</p>
+        <h3 className="text-md md:text-2xl font-semibold text-white mb-3">{title}</h3>
+        <p className="text-sm md:text-xl text-white/90 text-justify mb-6">{description}</p>
 
         {tags && (
-          <div className="flex flex-wrap gap-2 text-lg font-mono">
+          <div className="flex flex-wrap gap-2 text-md md:text-lg font-mono">
             {tags.map((tag, i) => (
               <span
                 key={i}
@@ -76,11 +76,11 @@ export default function InitiativeCard({
         )}
 
         {link && (
-          <div className="flex flex-wrap gap-2 text-lg font-mono">
+          <div className="flex flex-wrap gap-2 text-md md:text-lg font-mono">
             <Button
               variant="ghost"
               size="lg"
-              className="p-6 gap-2 rounded-full bg-white/[0.03] backdrop-blur-md border border-white/[0.08] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-lg text-orange-500/90 font-bold hover:text-orange-500 hover:bg-white/[0.08] hover:border-white/[0.15] transition-all duration-300 pointer-events-auto"
+              className="p-6 gap-2 rounded-full bg-white/[0.03] backdrop-blur-md border border-white/[0.08] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-md md:text-lg text-orange-500/90 font-bold hover:text-orange-500 hover:bg-white/[0.08] hover:border-white/[0.15] transition-all duration-300 pointer-events-auto"
               asChild
             >
               <Link href={link}>
