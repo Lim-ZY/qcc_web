@@ -19,7 +19,7 @@ export default function SectionHeader({
       )}
     >
       <h2 className="text-xl md:text-5xl font-bold text-white mb-4">{title}</h2>
-      <p className="text-lg max-w-3xl text-white/90 mx-auto">{description}</p>
+      <p className="text-md md:text-xl max-w-3xl text-white/90 mx-auto">{description}</p>
     </div>
   );
 }
