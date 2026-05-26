@@ -24,10 +24,10 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 z-50 inset-x-0 flex items-center justify-between backdrop-blur-md w-full px-6 py-2 pointer-events-auto border-b border-white/10">
+    <header className="fixed top-0 z-50 inset-x-0 flex items-center justify-between backdrop-blur-md w-full px-2 md:px-4 py-2 pointer-events-auto border-b border-white/10">
       <Link href="/" className="flex items-center gap-1 px-2 md:px-4">
         <Image src="/icon.png" alt="NUS QCC Logo" width={100} height={50} className="bg-white/[0.1] rounded-lg p-2" />
-        <Separator className="mx-2" orientation="vertical" />
+        <Separator className="mx-1 md:mx-2" orientation="vertical" />
         <h1 className="text-xl font-bold text-white">
           NUS QCC
         </h1>
@@ -59,7 +59,7 @@ export default function Navbar() {
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="bg-[#0a0c14] border-l border-white/10 pt-16">
+          <SheetContent side="right" className="bg-[#0a0c14] border-l border-white/10 p-4">
             <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
             <div className="flex flex-col gap-6 mt-4">
               {navLinks.map((link) => (
@@ -67,7 +67,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-2xl font-bold text-white/90 hover:text-white border-b border-white/5 pb-4"
+                  className="text-xl font-bold text-white/90 hover:text-white border-b border-white/5 pb-4"
                 >
                   {link.name}
                 </Link>
@@ -77,11 +77,19 @@ export default function Navbar() {
                 href="/notes"
                 target="_blank"
                 onClick={() => setIsOpen(false)}
-                className="flex items-center justify-between text-2xl font-bold text-white/90 hover:text-white border-b border-white/5 pb-4"
+                className="flex items-center text-xl font-bold text-white/90 hover:text-white border-b border-white/5 pb-4"
               >
                 Notes Database
                 <ArrowUpRightIcon className="h-6 w-6" />
               </Link>
+            </div>
+
+            <div className="py-4">
+              <SheetClose asChild>
+                <Button variant="outline" className="bg-transparent w-full rounded-full text-white hover:bg-white/10 text-lg py-2 border-white/20">
+                  Close
+                </Button>
+              </SheetClose>
             </div>
           </SheetContent>
         </Sheet>
